@@ -1,0 +1,8 @@
+name: Output information # Name of the workflow
+on: workflow_dispatch # Event that triggers the workflow
+jobs: # Jobs that run in the workflow
+  info: # Name of the job
+    runs-on: ubuntu-latest # Operating system to run the job
+    steps: # Steps that run in the job
+      - name: Output Github context # Name of the step
+        run: echo "${{ toJSON(github)}}" # Command to run in the step
