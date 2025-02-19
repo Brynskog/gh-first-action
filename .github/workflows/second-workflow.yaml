@@ -1,5 +1,5 @@
 name: Deploy project # Name of the workflow
-on: push # Event that triggers the workflow
+on: [push, workflow_dispatch] # Event that triggers the workflow
 jobs: # Jobs that run in the workflow
   test: # Name of the job
     runs-on: ubuntu-latest # Operating system to run the job
